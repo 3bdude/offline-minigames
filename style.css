@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background: #121212;
+    color: #fff;
+    font-family: system-ui, sans-serif;
+}
+
+header {
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav button {
+    background: #1f6feb;
+    border: none;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    touch-action: none;
+    background: #000;
+    border: 1px solid #333;
+}

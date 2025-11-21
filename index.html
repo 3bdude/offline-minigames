@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Touch Minigames</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Touch Minigames</h1>
+    <nav id="menu">
+      <button data-game="pong">Play Touch Pong</button>
+      <button data-game="tap-race">Play Tap Race</button>
+    </nav>
+  </header>
+
+  <canvas id="game" width="800" height="500"></canvas>
+
+  <script src="main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
